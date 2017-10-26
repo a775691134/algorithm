@@ -1,12 +1,12 @@
 function shellSort(arr){
-    var h = 1
-    var N = arr.length
+    let h = 1
+    let N = arr.length
     while(h < N/3){
         h = h*3+1
     }
     while(h >= 1){
-        for(var i=h;i<N;i++){
-            for(var j=i; j>=h && arr[j]<arr[j-h]; j-=h){
+        for(let i=h;i<N;i++){
+            for(let j=i; j>=h && arr[j]<arr[j-h]; j-=h){
                 let num = arr[j]
                 arr[j] = arr[j-h]
                 arr[j-h] = num
